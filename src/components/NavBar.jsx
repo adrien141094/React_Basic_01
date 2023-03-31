@@ -1,12 +1,16 @@
+import { useEffect } from "react";
 
 function NavBar({ pokemonIndex, setPokemonIndex }) {
 
+
   const handleClickNext = () => {
     setPokemonIndex(pokemonIndex + 1)
+    { pokemonIndex === 3 ? alert("Pika Pika..atCHOUMMM..snif") : '' }
   };
 
   const handleClickPrevious = () => {
     setPokemonIndex(pokemonIndex - 1)
+    { pokemonIndex === 3 ? alert("Pika Pika..atCHOUMMM..snif") : '' }
   };
 
   return (
